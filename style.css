@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
+|*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+}
+.container{
+    display: flex;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: green;
+    color: #fff;
+    justify-content: space-between;
+}
+.container aside{
+    background-color: #5b5b5b;
+    /* border: 2px solid blue; */
+    margin: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container aside header{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
+.container aside header img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+.container aside .menu-list-items{
+    width: 100%;
+    /* border: 2px solid #fff; */
+    display: flex;
+    justify-content: center;
+}
+.container aside .menu-list-items ul, .container aside ul.settings{
+    list-style-type: none;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+  
+}
+.container aside .menu-list-items ul li, .container aside ul.settings li{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+.container aside .menu-list-items ul li i, .container aside ul.settings li i{
+    color: green;
+}
+.container aside .menu-list-items ul li a, .container aside ul.settings li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+ li:hover{
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+/* MAIN CONTENT */
+.container main{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    flex: 2;
+    padding: 30px;
+}
+.container main header{
+    /* border: 2px solid plum; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container main header .header-text h4{
+    line-height: 0px;
+    font-size: 18px;
+}
+.container main header .header-text p{
+    font-size: 12px;
+}
+.container main header input{
+    min-width: 400px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.container main header button{
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.container main header button img{
+    width: 70%;
+    height: 80%;
+}
+.container main header button i{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* GRAPHS */
+.container main .main-section{
+    /* border: 2px solid orangered; */
+    display: flex; 
+    padding: 20px;
+}
+.container main .main-section .graphs{
+    display: flex;
+    flex-direction: column;
+     /* border: 2px solid rebeccapurple; */
+     flex: 2;
+     /* padding: 10px; */
+     max-width: 600px;
+     padding: 2%;
+}
+.container main .main-section .graphs .total-revenue{
+    color: green;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 5px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 100%;
+    /* border: 2px solid red; */
+}
+.container main .main-section .graphs .total-revenue .revenue-description .revenue{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    height: fit-content;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .revenue h3{
+    line-height: 0px;
+    color: green;
+    font-weight: 800;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .revenue span{
+    line-height: 0px;
+    color: black;
+    font-size: 14px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    margin-left: 10%;
+    height: fit-content;
+    /* border: 2px solid red; */
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key{
+    display: flex;
+    justify-content: space-between;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key span, .container main .main-section .graphs .total-revenue .revenue-description .graph-keys .duration span {
+    font-size: 12px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key span{
+    padding-top: 3px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .duration span{
+   font-size: 14px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key #earned, .container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key #forecasted{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 2px 5px;
+}
+.container main .main-section .graphs .total-revenue .revenue-description .graph-keys .key #forecasted{
+    background-color: green;
+}
+
+.container main .main-section .graphs .total-revenue canvas#myChart2{
+    max-height: 202px;
+}
+
+/* SOLD VENDOR */
+.sold-vendor{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.sold-vendor .cars-sold{
+    color: green;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1%;
+    
+}
+.sold-vendor .cars-sold .sold-header, .vendor-activity .vendor-header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    height: fit-content;
+}
+.sold-vendor .cars-sold .sold-header h3, .vendor-activity .vendor-header h3{
+    line-height: 5px;
+    font-size: 15px;
+}
+.sold-vendor .cars-sold .sold-header .duration, .vendor-activity .vendor-header .duration{
+    margin-top: 4px;
+}
+.sold-vendor .cars-sold .sold-header .duration span, .vendor-activity .vendor-header .duration span{
+    font-size: 12px;
+}
+.sold-vendor .cars-sold .sold-header .duration i, .vendor-activity .vendor-header .duration i{
+    font-size: 12px;
+}
+.sold-vendor .cars-sold .cars-sold-body{
+    display: flex;
+    justify-content: space-between;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info .info-1, .sold-vendor .cars-sold .cars-sold-body .graph-info .info-2{
+    display: flex;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info .info-1 .color, .sold-vendor .cars-sold .cars-sold-body .graph-info .info-2 .color{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 3px;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info .info-2 .color{
+    background-color: green;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info .info-1 span, .sold-vendor .cars-sold .cars-sold-body .graph-info .info-2 span{
+    font-size: 11px;
+}
+.sold-vendor .cars-sold .cars-sold-body .graph-info p{
+    color: blueviolet;
+    font-weight: 900;
+}
+.charts{
+    width: 70%;
+    height: fit-content;
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: center;
+}
+
+.sold-vendor .vendor-activity{
+    color: green;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 2px solid orange; */
+    margin: 1%;
+}
+.vendor-activity .vendor-chart{
+    margin-top: 20px;
+    width: 100%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+.vendor-activity .vendor-chart canvas{
+    width: 100%;
+}
+
+/* OTHER INFORMATIONS */
+.sales-information{
+    /* border: 2px solid red; */
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    /* border: 2px solid #fff; */
+}
+
+.sales-information .sales-info{
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 0px 5px 10px; */
+}
+.sales-information .sales-info .info-1{
+    display: flex;
+    justify-content: center;
+    color: green;
+    background: #fff;
+    border-radius: 12px;
+    margin: 10px;
+    /* border: 2px solid white; */
+    
+
+}
+.sales-information .sales-info .info-1 .info-icon{
+    /* border: 2px solid #fff; */
+    /* width: 40%; */
+    border-radius: 50%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sales-information .sales-info .info-1 .info-icon i{
+    font-size: 50px;
+}
+.sales-information .sales-info .info-1 .info1-text{
+    /* border: 2px solid red; */
+    padding-bottom: 10px;
+    padding-right: 4px;
+    width: 50%;
+    text-align: center;
+}
+.sales-information .sales-info .info-1 .info1-text h3{
+    font-size: 24px;
+}
+.sales-information .sales-info .info-1 .info1-text p{
+    font-size: 15px;
+    color: #000;
+    line-height: 0px;;
+}
+.sales-information .sales-info .info-1 .info1-text .duration span{
+    font-size: 12px;
+}
+
+.upcoming-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5%;
+    /* border: 2px solid #000; */
+    margin-top: 40px;
+}
+.upcoming-events .upcoming-events-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    padding: 10px;
+}
+.upcoming-events .upcoming-events-content h4{
+    color: green;
+}
+.upcoming-events .upcoming-events-content i{
+    font-size: 50px;
+    color: black;
+}
+.upcoming-events .upcoming-events-content p{
+    color: #000;
+}
+.upcoming-events .upcoming-events-content button{
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+}

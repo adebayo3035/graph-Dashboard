@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7cab3097e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet" />
+    <!-- end of font awesome -->
+
+    <!-- Chart.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- end of chart.js cdn -->
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <header>
+                <img src="./assets/logo.jpg" alt="Our Logo" />
+            </header>
+            <div class="menu-list-items">
+                <ul class="menu-list">
+                    <li class="menu-item"><i class="fa-solid fa-house-user"></i> <a href="index.html">Home</a></li>
+                    <li class="menu-item"><i class="fa-solid fa-tree"></i> <a href="">Forecast</a></li>
+                    <li class="menu-item"><i class="fa-solid fa-person"></i> <a href="index.html">Vendors</a></li>
+                    <li class="menu-item"> <i class="fa-solid fa-envelope"></i> <a href="">Messages</a></li>
+                    <li class="menu-item"><i class="fa-solid fa-bars"></i> <a href="index.html">Categories</a></li>
+                    <li class="menu-item"><i class="fa-solid fa-folder"></i> <a href="index.html">Folders</a></li>
+                </ul>
+            </div>
+
+
+            <ul class="settings">
+                <li class="menu-item"><i class="fa-solid fa-gear"></i><a href="index.html">Settings</a></li>
+                <li class="menu-item"><i class="fa-solid fa-cloud-arrow-up"></i> <a href="index.html">Backup</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <header>
+                <div class="header-text">
+                    <h4>Welcome Kenny!</h4>
+                    <p>Here is your Sales Summary Dashboard</p>
+                </div>
+                <input type="text" name="search-query" id="search-query" placeholder="&#x1F50D; Search your query" />
+                <i class="fa-solid fa-bell"></i>
+                <button class="dropdown-btn">
+                    <img src="./assets/header_image.png" alt="" />
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </header>
+            <div class="main-section">
+                <section class="graphs">
+                    <div class="total-revenue">
+                        <div class="revenue-description">
+                            <div class="revenue">
+                                <h3>$102.5M</h3>
+                                <!-- <p>Total Revenue</p> -->
+                                <span> Total Revenue</span>
+                            </div>
+                            <div class="graph-keys">
+                                <div class="key">
+                                    <div id="earned"></div>
+                                    <span> Earned</span>
+                                </div>
+                                <div class="key">
+                                    <div id="forecasted"></div>
+                                    <span> Forecasted</span>
+                                </div>
+
+                                <div class="duration">
+                                    <span> 6 months</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart2"></canvas>
+
+                    </div>
+
+                    <div class="sold-vendor">
+                        <div class="cars-sold">
+                            <div class="sold-header">
+                                <h3>Cars Sold</h3>
+                                <div class="duration">
+                                    <span> This month</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+                            <div class="cars-sold-body">
+                                <div class="charts">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+
+                                <div class="graph-info">
+                                    <div class="info-1">
+                                        <div class="color"></div>
+                                        <span class="sold"> Sold</span>
+                                    </div>
+                                    <p> 10K</p>
+                                    <div class="info-2">
+                                        <div class="color"></div>
+                                        <span class="sold"> Produced</span>
+
+                                    </div>
+                                    <p> 4K</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="vendor-activity">
+                            <div class="vendor-header">
+                                <h3>Vendor Activity</h3>
+                                <div class="duration">
+                                    <span> This Week</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+
+                            <div class="vendor-chart">
+                                <canvas id="myChart3"></canvas>
+                            </div>
+
+                        </div>
+                </section>
+
+                <!-- other informations -->
+                <div class="sales-information">
+                    <div class="sales-info">
+                        <div class="info-1">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+
+                            <div class="info1-text">
+                                <h3> 300</h3>
+                                <p> Onboarded</p>
+                                <div class="duration">
+                                    <span> Jul 2023</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-1">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-euro-sign"></i>
+                            </div>
+
+                            <div class="info1-text">
+                                <h3> $60</h3>
+                                <p> Profit Earned</p>
+                                <div class="duration">
+                                    <span> Jul 2023</span>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-events">
+                        <div class="upcoming-events-content">
+                            <h4> Upcoming QBR</h4>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p> 12th Aug. 2023</p>
+                            <button> Send RSVP</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
